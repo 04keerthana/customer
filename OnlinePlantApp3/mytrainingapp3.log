@@ -1,0 +1,224 @@
+2023-02-02 19:35:07.287  INFO 5252 --- [restartedMain] c.c.o.OnlinePlantApp3Application         : Starting OnlinePlantApp3Application using Java 17.0.5 on INLEN8520069525 with PID 5252 (C:\MySpringBootWork\OnlinePlantApp3\bin\main started by keejanga in C:\MySpringBootWork\OnlinePlantApp3)
+2023-02-02 19:35:07.288  INFO 5252 --- [restartedMain] c.c.o.OnlinePlantApp3Application         : No active profile set, falling back to 1 default profile: "default"
+2023-02-02 19:35:08.648  INFO 5252 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2023-02-02 19:35:08.648  INFO 5252 --- [restartedMain] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.71]
+2023-02-02 19:35:08.767  INFO 5252 --- [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2023-02-02 19:35:08.951  INFO 5252 --- [restartedMain] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2023-02-02 19:35:08.986  INFO 5252 --- [restartedMain] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 5.6.14.Final
+2023-02-02 19:35:09.137  INFO 5252 --- [restartedMain] o.hibernate.annotations.common.Version   : HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+2023-02-02 19:35:09.222  INFO 5252 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2023-02-02 19:35:09.508  INFO 5252 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2023-02-02 19:35:09.524  INFO 5252 --- [restartedMain] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.PostgreSQLDialect
+2023-02-02 19:35:10.024  WARN 5252 --- [restartedMain] o.h.engine.jdbc.spi.SqlExceptionHelper   : SQL Warning Code: 0, SQLState: 00000
+2023-02-02 19:35:10.025  WARN 5252 --- [restartedMain] o.h.engine.jdbc.spi.SqlExceptionHelper   : table "customer_module" does not exist, skipping
+2023-02-02 19:35:10.085  INFO 5252 --- [restartedMain] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2023-02-02 19:35:10.101  INFO 5252 --- [restartedMain] c.c.o.controller.CustomerController      : Customer Controller Called
+2023-02-02 19:35:10.106  WARN 5252 --- [restartedMain] ConfigServletWebServerApplicationContext : Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'customerController': Unsatisfied dependency expressed through field 'customerService'; nested exception is org.springframework.beans.factory.NoSuchBeanDefinitionException: No qualifying bean of type 'com.cg.onlineplantnursery.customer.service.ICustomerService' available: expected at least 1 bean which qualifies as autowire candidate. Dependency annotations: {@org.springframework.beans.factory.annotation.Autowired(required=true)}
+2023-02-02 19:35:10.113  INFO 5252 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2023-02-02 19:35:10.240  INFO 5252 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2023-02-02 19:35:10.241  INFO 5252 --- [restartedMain] o.apache.catalina.core.StandardService   : Stopping service [Tomcat]
+2023-02-02 19:35:10.282 ERROR 5252 --- [restartedMain] o.s.b.d.LoggingFailureAnalysisReporter   : 
+
+***************************
+APPLICATION FAILED TO START
+***************************
+
+Description:
+
+Field customerService in com.cg.onlineplantnursery.controller.CustomerController required a bean of type 'com.cg.onlineplantnursery.customer.service.ICustomerService' that could not be found.
+
+The injection point has the following annotations:
+	- @org.springframework.beans.factory.annotation.Autowired(required=true)
+
+
+Action:
+
+Consider defining a bean of type 'com.cg.onlineplantnursery.customer.service.ICustomerService' in your configuration.
+
+2023-02-02 19:49:45.542  INFO 32428 --- [restartedMain] c.c.o.OnlinePlantApp3Application         : Starting OnlinePlantApp3Application using Java 17.0.5 on INLEN8520069525 with PID 32428 (C:\MySpringBootWork\OnlinePlantApp3\bin\main started by keejanga in C:\MySpringBootWork\OnlinePlantApp3)
+2023-02-02 19:49:45.544  INFO 32428 --- [restartedMain] c.c.o.OnlinePlantApp3Application         : No active profile set, falling back to 1 default profile: "default"
+2023-02-02 19:49:46.962  INFO 32428 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2023-02-02 19:49:46.962  INFO 32428 --- [restartedMain] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.71]
+2023-02-02 19:49:47.046  INFO 32428 --- [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2023-02-02 19:49:47.244  INFO 32428 --- [restartedMain] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2023-02-02 19:49:47.288  INFO 32428 --- [restartedMain] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 5.6.14.Final
+2023-02-02 19:49:47.447  INFO 32428 --- [restartedMain] o.hibernate.annotations.common.Version   : HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+2023-02-02 19:49:47.531  INFO 32428 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2023-02-02 19:49:47.858  INFO 32428 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2023-02-02 19:49:47.878  INFO 32428 --- [restartedMain] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.PostgreSQLDialect
+2023-02-02 19:49:48.555  INFO 32428 --- [restartedMain] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2023-02-02 19:49:48.572  INFO 32428 --- [restartedMain] c.c.o.controller.CustomerController      : Customer Controller Called
+2023-02-02 19:49:48.578  WARN 32428 --- [restartedMain] ConfigServletWebServerApplicationContext : Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'customerController': Unsatisfied dependency expressed through field 'customerService'; nested exception is org.springframework.beans.factory.NoSuchBeanDefinitionException: No qualifying bean of type 'com.cg.onlineplantnursery.customer.service.ICustomerService' available: expected at least 1 bean which qualifies as autowire candidate. Dependency annotations: {@org.springframework.beans.factory.annotation.Autowired(required=true)}
+2023-02-02 19:49:48.586  INFO 32428 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2023-02-02 19:49:48.648  INFO 32428 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2023-02-02 19:49:48.654  INFO 32428 --- [restartedMain] o.apache.catalina.core.StandardService   : Stopping service [Tomcat]
+2023-02-02 19:49:48.688 ERROR 32428 --- [restartedMain] o.s.b.d.LoggingFailureAnalysisReporter   : 
+
+***************************
+APPLICATION FAILED TO START
+***************************
+
+Description:
+
+Field customerService in com.cg.onlineplantnursery.controller.CustomerController required a bean of type 'com.cg.onlineplantnursery.customer.service.ICustomerService' that could not be found.
+
+The injection point has the following annotations:
+	- @org.springframework.beans.factory.annotation.Autowired(required=true)
+
+
+Action:
+
+Consider defining a bean of type 'com.cg.onlineplantnursery.customer.service.ICustomerService' in your configuration.
+
+2023-02-02 19:57:52.706  INFO 11228 --- [restartedMain] c.c.o.OnlinePlantApp3Application         : Starting OnlinePlantApp3Application using Java 17.0.5 on INLEN8520069525 with PID 11228 (C:\MySpringBootWork\OnlinePlantApp3\bin\main started by keejanga in C:\MySpringBootWork\OnlinePlantApp3)
+2023-02-02 19:57:52.708  INFO 11228 --- [restartedMain] c.c.o.OnlinePlantApp3Application         : No active profile set, falling back to 1 default profile: "default"
+2023-02-02 19:57:54.080  INFO 11228 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2023-02-02 19:57:54.082  INFO 11228 --- [restartedMain] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.71]
+2023-02-02 19:57:54.159  INFO 11228 --- [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2023-02-02 19:57:54.404  INFO 11228 --- [restartedMain] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2023-02-02 19:57:54.446  INFO 11228 --- [restartedMain] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 5.6.14.Final
+2023-02-02 19:57:54.602  INFO 11228 --- [restartedMain] o.hibernate.annotations.common.Version   : HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+2023-02-02 19:57:54.697  INFO 11228 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2023-02-02 19:57:55.012  INFO 11228 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2023-02-02 19:57:55.029  INFO 11228 --- [restartedMain] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.PostgreSQLDialect
+2023-02-02 19:57:55.663  INFO 11228 --- [restartedMain] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2023-02-02 19:57:55.690  INFO 11228 --- [restartedMain] c.c.o.controller.CustomerController      : Customer Controller Called
+2023-02-02 19:57:55.696  WARN 11228 --- [restartedMain] ConfigServletWebServerApplicationContext : Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'customerController': Unsatisfied dependency expressed through field 'customerService'; nested exception is org.springframework.beans.factory.NoSuchBeanDefinitionException: No qualifying bean of type 'com.cg.onlineplantnursery.customer.service.ICustomerService' available: expected at least 1 bean which qualifies as autowire candidate. Dependency annotations: {@org.springframework.beans.factory.annotation.Autowired(required=true)}
+2023-02-02 19:57:55.703  INFO 11228 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2023-02-02 19:57:55.776  INFO 11228 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2023-02-02 19:57:55.779  INFO 11228 --- [restartedMain] o.apache.catalina.core.StandardService   : Stopping service [Tomcat]
+2023-02-02 19:57:55.815 ERROR 11228 --- [restartedMain] o.s.b.d.LoggingFailureAnalysisReporter   : 
+
+***************************
+APPLICATION FAILED TO START
+***************************
+
+Description:
+
+Field customerService in com.cg.onlineplantnursery.controller.CustomerController required a bean of type 'com.cg.onlineplantnursery.customer.service.ICustomerService' that could not be found.
+
+The injection point has the following annotations:
+	- @org.springframework.beans.factory.annotation.Autowired(required=true)
+
+
+Action:
+
+Consider defining a bean of type 'com.cg.onlineplantnursery.customer.service.ICustomerService' in your configuration.
+
+2023-02-02 20:31:37.679  INFO 33920 --- [restartedMain] c.c.o.OnlinePlantApp3Application         : Starting OnlinePlantApp3Application using Java 17.0.5 on INLEN8520069525 with PID 33920 (C:\MySpringBootWork\OnlinePlantApp3\bin\main started by keejanga in C:\MySpringBootWork\OnlinePlantApp3)
+2023-02-02 20:31:37.681  INFO 33920 --- [restartedMain] c.c.o.OnlinePlantApp3Application         : No active profile set, falling back to 1 default profile: "default"
+2023-02-02 20:31:39.152  INFO 33920 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2023-02-02 20:31:39.153  INFO 33920 --- [restartedMain] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.71]
+2023-02-02 20:31:39.227  INFO 33920 --- [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2023-02-02 20:31:39.441  INFO 33920 --- [restartedMain] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2023-02-02 20:31:39.483  INFO 33920 --- [restartedMain] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 5.6.14.Final
+2023-02-02 20:31:39.628  INFO 33920 --- [restartedMain] o.hibernate.annotations.common.Version   : HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+2023-02-02 20:31:39.738  INFO 33920 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2023-02-02 20:31:40.083  INFO 33920 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2023-02-02 20:31:40.100  INFO 33920 --- [restartedMain] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.PostgreSQLDialect
+2023-02-02 20:31:40.705  INFO 33920 --- [restartedMain] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2023-02-02 20:31:40.722  INFO 33920 --- [restartedMain] c.c.o.controller.CustomerController      : Customer Controller Called
+2023-02-02 20:31:41.171  WARN 33920 --- [restartedMain] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2023-02-02 20:31:41.651  INFO 33920 --- [restartedMain] c.c.o.OnlinePlantApp3Application         : Started OnlinePlantApp3Application in 4.445 seconds (JVM running for 4.956)
+2023-02-02 20:31:54.130  INFO 33920 --- [http-nio-2002-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2023-02-02 20:31:54.257  WARN 33920 --- [http-nio-2002-exec-1] .w.s.m.s.DefaultHandlerExceptionResolver : Resolved [org.springframework.http.converter.HttpMessageNotReadableException: JSON parse error: Cannot construct instance of `com.cg.onlineplantnursery.customer.entity.Address` (although at least one Creator exists): no String-argument constructor/factory method to deserialize from String value ('abc-chennai'); nested exception is com.fasterxml.jackson.databind.exc.MismatchedInputException: Cannot construct instance of `com.cg.onlineplantnursery.customer.entity.Address` (although at least one Creator exists): no String-argument constructor/factory method to deserialize from String value ('abc-chennai')<EOL> at [Source: (org.springframework.util.StreamUtils$NonClosingInputStream); line: 6, column: 17] (through reference chain: com.cg.onlineplantnursery.customer.entity.Customer["address"])]
+2023-02-02 20:36:41.012  INFO 33920 --- [Thread-5] o.apache.catalina.core.StandardService   : Stopping service [Tomcat]
+2023-02-02 20:36:41.013  INFO 33920 --- [Thread-5] o.a.c.c.C.[Tomcat].[localhost].[/]       : Destroying Spring FrameworkServlet 'dispatcherServlet'
+2023-02-02 20:36:41.023  INFO 33920 --- [Thread-5] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2023-02-02 20:36:41.028  INFO 33920 --- [Thread-5] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2023-02-02 20:36:41.137  INFO 33920 --- [restartedMain] c.c.o.OnlinePlantApp3Application         : Starting OnlinePlantApp3Application using Java 17.0.5 on INLEN8520069525 with PID 33920 (C:\MySpringBootWork\OnlinePlantApp3\bin\main started by keejanga in C:\MySpringBootWork\OnlinePlantApp3)
+2023-02-02 20:36:41.137  INFO 33920 --- [restartedMain] c.c.o.OnlinePlantApp3Application         : No active profile set, falling back to 1 default profile: "default"
+2023-02-02 20:36:41.546  INFO 33920 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2023-02-02 20:36:41.547  INFO 33920 --- [restartedMain] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.71]
+2023-02-02 20:36:41.586  INFO 33920 --- [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2023-02-02 20:36:41.643  INFO 33920 --- [restartedMain] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2023-02-02 20:36:41.649  INFO 33920 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-2 - Starting...
+2023-02-02 20:36:41.902  INFO 33920 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-2 - Start completed.
+2023-02-02 20:36:41.903  INFO 33920 --- [restartedMain] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.PostgreSQLDialect
+2023-02-02 20:36:42.008  INFO 33920 --- [restartedMain] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2023-02-02 20:36:42.018  INFO 33920 --- [restartedMain] c.c.o.controller.CustomerController      : Customer Controller Called
+2023-02-02 20:36:42.088  WARN 33920 --- [restartedMain] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2023-02-02 20:36:42.196  INFO 33920 --- [restartedMain] c.c.o.OnlinePlantApp3Application         : Started OnlinePlantApp3Application in 1.098 seconds (JVM running for 305.502)
+2023-02-02 20:36:48.739  INFO 33920 --- [Thread-7] o.apache.catalina.core.StandardService   : Stopping service [Tomcat]
+2023-02-02 20:36:48.746  INFO 33920 --- [Thread-7] com.zaxxer.hikari.HikariDataSource       : HikariPool-2 - Shutdown initiated...
+2023-02-02 20:36:48.751  INFO 33920 --- [Thread-7] com.zaxxer.hikari.HikariDataSource       : HikariPool-2 - Shutdown completed.
+2023-02-02 20:36:48.833  INFO 33920 --- [restartedMain] c.c.o.OnlinePlantApp3Application         : Starting OnlinePlantApp3Application using Java 17.0.5 on INLEN8520069525 with PID 33920 (C:\MySpringBootWork\OnlinePlantApp3\bin\main started by keejanga in C:\MySpringBootWork\OnlinePlantApp3)
+2023-02-02 20:36:48.834  INFO 33920 --- [restartedMain] c.c.o.OnlinePlantApp3Application         : No active profile set, falling back to 1 default profile: "default"
+2023-02-02 20:36:49.086  INFO 33920 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2023-02-02 20:36:49.087  INFO 33920 --- [restartedMain] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.71]
+2023-02-02 20:36:49.105  INFO 33920 --- [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2023-02-02 20:36:49.135  INFO 33920 --- [restartedMain] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2023-02-02 20:36:49.141  INFO 33920 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-3 - Starting...
+2023-02-02 20:36:49.322  INFO 33920 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-3 - Start completed.
+2023-02-02 20:36:49.323  INFO 33920 --- [restartedMain] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.PostgreSQLDialect
+2023-02-02 20:36:49.431  INFO 33920 --- [restartedMain] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2023-02-02 20:36:49.445  INFO 33920 --- [restartedMain] c.c.o.controller.CustomerController      : Customer Controller Called
+2023-02-02 20:36:49.526  WARN 33920 --- [restartedMain] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2023-02-02 20:36:49.630  INFO 33920 --- [restartedMain] c.c.o.OnlinePlantApp3Application         : Started OnlinePlantApp3Application in 0.824 seconds (JVM running for 312.936)
+2023-02-02 20:37:12.229  INFO 33920 --- [http-nio-2002-exec-2] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2023-02-02 20:37:12.234  WARN 33920 --- [http-nio-2002-exec-2] .w.s.m.s.DefaultHandlerExceptionResolver : Resolved [org.springframework.http.converter.HttpMessageNotReadableException: JSON parse error: Cannot construct instance of `com.cg.onlineplantnursery.customer.entity.Address` (although at least one Creator exists): no String-argument constructor/factory method to deserialize from String value ('abc-chennai'); nested exception is com.fasterxml.jackson.databind.exc.MismatchedInputException: Cannot construct instance of `com.cg.onlineplantnursery.customer.entity.Address` (although at least one Creator exists): no String-argument constructor/factory method to deserialize from String value ('abc-chennai')<EOL> at [Source: (org.springframework.util.StreamUtils$NonClosingInputStream); line: 6, column: 17] (through reference chain: com.cg.onlineplantnursery.customer.entity.Customer["address"])]
+2023-02-02 20:39:28.778  WARN 33920 --- [http-nio-2002-exec-4] .w.s.m.s.DefaultHandlerExceptionResolver : Resolved [org.springframework.web.HttpRequestMethodNotSupportedException: Request method 'POST' not supported]
+2023-02-02 20:39:45.121  WARN 33920 --- [http-nio-2002-exec-5] .w.s.m.s.DefaultHandlerExceptionResolver : Resolved [org.springframework.web.HttpRequestMethodNotSupportedException: Request method 'GET' not supported]
+2023-02-02 20:39:55.965 ERROR 33920 --- [http-nio-2002-exec-6] o.a.c.c.C.[.[.[/].[dispatcherServlet]    : Servlet.service() for servlet [dispatcherServlet] in context with path [] threw exception [Request processing failed; nested exception is javax.persistence.EntityNotFoundException: Unable to find com.cg.onlineplantnursery.customer.entity.Customer with id 2] with root cause
+
+javax.persistence.EntityNotFoundException: Unable to find com.cg.onlineplantnursery.customer.entity.Customer with id 2
+	at org.hibernate.jpa.boot.internal.EntityManagerFactoryBuilderImpl$JpaEntityNotFoundDelegate.handleEntityNotFound(EntityManagerFactoryBuilderImpl.java:177) ~[hibernate-core-5.6.14.Final.jar:5.6.14.Final]
+	at org.hibernate.proxy.AbstractLazyInitializer.checkTargetState(AbstractLazyInitializer.java:298) ~[hibernate-core-5.6.14.Final.jar:5.6.14.Final]
+	at org.hibernate.proxy.AbstractLazyInitializer.initialize(AbstractLazyInitializer.java:187) ~[hibernate-core-5.6.14.Final.jar:5.6.14.Final]
+	at org.hibernate.proxy.AbstractLazyInitializer.getImplementation(AbstractLazyInitializer.java:322) ~[hibernate-core-5.6.14.Final.jar:5.6.14.Final]
+	at org.hibernate.proxy.pojo.bytebuddy.ByteBuddyInterceptor.intercept(ByteBuddyInterceptor.java:45) ~[hibernate-core-5.6.14.Final.jar:5.6.14.Final]
+	at org.hibernate.proxy.ProxyConfiguration$InterceptorDispatcher.intercept(ProxyConfiguration.java:95) ~[hibernate-core-5.6.14.Final.jar:5.6.14.Final]
+	at com.cg.onlineplantnursery.customer.entity.Customer$HibernateProxy$ruU7GrCZ.toString(Unknown Source) ~[main/:na]
+	at com.cg.onlineplantnursery.controller.CustomerController.updatedCustomer(CustomerController.java:123) ~[main/:na]
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method) ~[na:na]
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77) ~[na:na]
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43) ~[na:na]
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568) ~[na:na]
+	at org.springframework.web.method.support.InvocableHandlerMethod.doInvoke(InvocableHandlerMethod.java:205) ~[spring-web-5.3.25.jar:5.3.25]
+	at org.springframework.web.method.support.InvocableHandlerMethod.invokeForRequest(InvocableHandlerMethod.java:150) ~[spring-web-5.3.25.jar:5.3.25]
+	at org.springframework.web.servlet.mvc.method.annotation.ServletInvocableHandlerMethod.invokeAndHandle(ServletInvocableHandlerMethod.java:117) ~[spring-webmvc-5.3.25.jar:5.3.25]
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.invokeHandlerMethod(RequestMappingHandlerAdapter.java:895) ~[spring-webmvc-5.3.25.jar:5.3.25]
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.handleInternal(RequestMappingHandlerAdapter.java:808) ~[spring-webmvc-5.3.25.jar:5.3.25]
+	at org.springframework.web.servlet.mvc.method.AbstractHandlerMethodAdapter.handle(AbstractHandlerMethodAdapter.java:87) ~[spring-webmvc-5.3.25.jar:5.3.25]
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:1071) ~[spring-webmvc-5.3.25.jar:5.3.25]
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:964) ~[spring-webmvc-5.3.25.jar:5.3.25]
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:1006) ~[spring-webmvc-5.3.25.jar:5.3.25]
+	at org.springframework.web.servlet.FrameworkServlet.doPut(FrameworkServlet.java:920) ~[spring-webmvc-5.3.25.jar:5.3.25]
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:699) ~[tomcat-embed-core-9.0.71.jar:4.0.FR]
+	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:883) ~[spring-webmvc-5.3.25.jar:5.3.25]
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:779) ~[tomcat-embed-core-9.0.71.jar:4.0.FR]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:227) ~[tomcat-embed-core-9.0.71.jar:9.0.71]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162) ~[tomcat-embed-core-9.0.71.jar:9.0.71]
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:53) ~[tomcat-embed-websocket-9.0.71.jar:9.0.71]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:189) ~[tomcat-embed-core-9.0.71.jar:9.0.71]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162) ~[tomcat-embed-core-9.0.71.jar:9.0.71]
+	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:100) ~[spring-web-5.3.25.jar:5.3.25]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:117) ~[spring-web-5.3.25.jar:5.3.25]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:189) ~[tomcat-embed-core-9.0.71.jar:9.0.71]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162) ~[tomcat-embed-core-9.0.71.jar:9.0.71]
+	at org.springframework.web.filter.FormContentFilter.doFilterInternal(FormContentFilter.java:93) ~[spring-web-5.3.25.jar:5.3.25]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:117) ~[spring-web-5.3.25.jar:5.3.25]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:189) ~[tomcat-embed-core-9.0.71.jar:9.0.71]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162) ~[tomcat-embed-core-9.0.71.jar:9.0.71]
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:201) ~[spring-web-5.3.25.jar:5.3.25]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:117) ~[spring-web-5.3.25.jar:5.3.25]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:189) ~[tomcat-embed-core-9.0.71.jar:9.0.71]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162) ~[tomcat-embed-core-9.0.71.jar:9.0.71]
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:177) ~[tomcat-embed-core-9.0.71.jar:9.0.71]
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:97) ~[tomcat-embed-core-9.0.71.jar:9.0.71]
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:541) ~[tomcat-embed-core-9.0.71.jar:9.0.71]
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:135) ~[tomcat-embed-core-9.0.71.jar:9.0.71]
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:92) ~[tomcat-embed-core-9.0.71.jar:9.0.71]
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:78) ~[tomcat-embed-core-9.0.71.jar:9.0.71]
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:360) ~[tomcat-embed-core-9.0.71.jar:9.0.71]
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:399) ~[tomcat-embed-core-9.0.71.jar:9.0.71]
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:65) ~[tomcat-embed-core-9.0.71.jar:9.0.71]
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:891) ~[tomcat-embed-core-9.0.71.jar:9.0.71]
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1784) ~[tomcat-embed-core-9.0.71.jar:9.0.71]
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:49) ~[tomcat-embed-core-9.0.71.jar:9.0.71]
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1191) ~[tomcat-embed-core-9.0.71.jar:9.0.71]
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:659) ~[tomcat-embed-core-9.0.71.jar:9.0.71]
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61) ~[tomcat-embed-core-9.0.71.jar:9.0.71]
+	at java.base/java.lang.Thread.run(Thread.java:833) ~[na:na]
+
+2023-02-02 20:40:38.967  WARN 33920 --- [http-nio-2002-exec-9] .w.s.m.s.DefaultHandlerExceptionResolver : Resolved [org.springframework.http.converter.HttpMessageNotReadableException: JSON parse error: Cannot construct instance of `com.cg.onlineplantnursery.customer.entity.Address` (although at least one Creator exists): no String-argument constructor/factory method to deserialize from String value ('abc-chennai'); nested exception is com.fasterxml.jackson.databind.exc.MismatchedInputException: Cannot construct instance of `com.cg.onlineplantnursery.customer.entity.Address` (although at least one Creator exists): no String-argument constructor/factory method to deserialize from String value ('abc-chennai')<EOL> at [Source: (org.springframework.util.StreamUtils$NonClosingInputStream); line: 6, column: 17] (through reference chain: com.cg.onlineplantnursery.customer.entity.Customer["address"])]
